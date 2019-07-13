@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh sirine@45.55.49.118 <<EOF
+ cd ~/node-app
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
